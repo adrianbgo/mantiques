@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/mantiques/static/js/main.afd3143a.js",
+    "static/js/377.5e016eb9.chunk.js": "/mantiques/static/js/377.5e016eb9.chunk.js",
+    "index.html": "/mantiques/index.html",
+    "main.afd3143a.js.map": "/mantiques/static/js/main.afd3143a.js.map",
+    "377.5e016eb9.chunk.js.map": "/mantiques/static/js/377.5e016eb9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.afd3143a.js"
+  ]
+}
