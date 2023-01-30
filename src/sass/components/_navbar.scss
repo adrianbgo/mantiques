@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  #logo {
+    font-family: serif;
+  }
+  .socials {
+    display: flex;
+    svg {
+      margin: auto 0.2rem;
+    }
+  }
+  margin: 1rem;
+}
