@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 *,
 *:before,
 *:after {
@@ -267,6 +269,99 @@ a:visited {
 }
 .navbar .socials svg {
   margin: auto 0.2rem;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  background-color: #eee;
+  padding: 5vh;
+}
+.testimonials .testimonial {
+  font-family: sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  min-height: 100%;
+  width: 100%;
+  color: #555;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+.testimonials .testimonial * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+.testimonials .testimonial img {
+  max-width: 100%;
+  height: 250px;
+  vertical-align: middle;
+}
+.testimonials .testimonial blockquote {
+  position: relative;
+  background-color: #fff;
+  padding: 25px 50px 25px 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+}
+.testimonials .testimonial blockquote::before, .testimonials .testimonial blockquote::after {
+  font-family: "FontAwesome";
+  content: "“";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+.testimonials .testimonial blockquote::before {
+  top: 25px;
+  left: 20px;
+}
+.testimonials .testimonial blockquote::after {
+  content: "”";
+  right: 20px;
+  bottom: 0;
+}
+.testimonials .testimonial blockquote .arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fff;
+  margin: 0;
+  position: absolute;
+}
+.testimonials .testimonial .author {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 25px;
+  color: #000;
+  background-color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+}
+.testimonials .testimonial .author h5 {
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 800;
+  font-size: small;
+}
+.testimonials .testimonial .author h5 span {
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 5px;
 }
 
 .hero {
