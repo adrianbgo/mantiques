@@ -1,6 +1,8 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import Navbar from "./components/Navbar";
+import Testimonials from "./components/Testimonials";
+import Gallery from "./molecules/Gallery";
 import Hero from "./molecules/Hero";
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
+      <Gallery />
+      <Testimonials />
     </div>
   );
 }
