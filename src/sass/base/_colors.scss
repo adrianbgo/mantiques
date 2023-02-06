@@ -1,14 +1,14 @@
 :root {
   // typography
-  --color-text: var(--gray-10);
-  --color-text-heading: var(--black);
-  --color-text-subtle: var(--gray-6);
-  --color-link: var(--color-primary);
-  --color-link-visited: var(--color-primary-dark);
+  $color-text: $gray-10;
+  $color-text-heading: $black;
+  $color-text-subtle: $gray-6;
+  $color-link: $color-primary;
+  $color-link-visited: $color-primary-dark;
 }
 
 body {
-  color: var(--color-text);
+  color: $color-text;
 }
 
 h1,
@@ -16,13 +16,13 @@ h2,
 h3,
 h4,
 form legend {
-  color: var(--color-text-heading);
+  color: $color-text-heading;
 }
 
 a {
-  color: var(--color-link);
+  color: $color-link;
 
   &:visited {
-    color: var(--color-link-visited);
+    color: $color-link-visited;
   }
 }

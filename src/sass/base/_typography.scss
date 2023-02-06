@@ -1,49 +1,49 @@
 :root {
-  --font-primary: sans-serif;
-  --font-secondary: serif;
+  $font-primary: sans-serif;
+  $font-secondary: serif;
 
-  --text-base-size: 1em;
-  --text-scale-ratio: 1.2;
+  $text-base-size: 1em;
+  $text-scale-ratio: 1.2;
 
   // Type Scale
-  --text-xs: calc(
-    var(--text-base-size) / (var(--text-scale-ratio) * var(--text-scale-ratio))
+  $text-xs: calc(
+    $text-base-size / ($text-scale-ratio * $text-scale-ratio)
   );
-  --text-sm: calc(var(--text-base-size) / var(--text-scale-ratio));
-  --text-md: calc(var(--text-base-size) * var(--text-scale-ratio));
-  --text-lg: calc(
-    var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio)
+  $text-sm: calc($text-base-size / $text-scale-ratio);
+  $text-md: calc($text-base-size * $text-scale-ratio);
+  $text-lg: calc(
+    $text-base-size * $text-scale-ratio * $text-scale-ratio
   );
-  --text-xl: calc(
-    var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) *
-      var(--text-scale-ratio)
+  $text-xl: calc(
+    $text-base-size * $text-scale-ratio * $text-scale-ratio *
+      $text-scale-ratio
   );
-  --text-xxl: calc(
-    var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) *
-      var(--text-scale-ratio) * var(--text-scale-ratio)
+  $text-xxl: calc(
+    $text-base-size * $text-scale-ratio * $text-scale-ratio *
+      $text-scale-ratio * $text-scale-ratio
   );
-  --text-xxxl: calc(
-    var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) *
-      var(--text-scale-ratio) * var(--text-scale-ratio) *
-      var(--text-scale-ratio)
+  $text-xxxl: calc(
+    $text-base-size * $text-scale-ratio * $text-scale-ratio *
+      $text-scale-ratio * $text-scale-ratio *
+      $text-scale-ratio
   );
 
   // spacing
-  --space-xxxs: 0.25em;
-  --space-xxs: 0.375em;
-  --space-xs: 0.5em;
-  --space-sm: 0.75em;
-  --space-md: 1.25em;
-  --space-lg: 2em;
-  --space-xl: 3.25em;
-  --space-xxl: 5.25em;
-  --space-xxxl: 8.5em;
+  $space-xxxs: 0.25em;
+  $space-xxs: 0.375em;
+  $space-xs: 0.5em;
+  $space-sm: 0.75em;
+  $space-md: 1.25em;
+  $space-lg: 2em;
+  $space-xl: 3.25em;
+  $space-xxl: 5.25em;
+  $space-xxxl: 8.5em;
 }
 
 body {
-  font-size: var(--text-base-size);
-  font-family: var(--font-primary);
-  color: var(color-text);
+  font-size: $text-base-size;
+  font-family: $font-primary;
+  color: $color-text;
 }
 
 h1,
@@ -51,72 +51,72 @@ h2,
 h3,
 h4,
 form legend {
-  color: var(color-text-heading);
-  margin-bottom: var(--space-xxs);
-  line-height: var(--heading-line-height);
+  color: $color-text-heading;
+  margin-bottom: $space-xxs;
+  line-height: $heading-line-height;
 }
 
 .text-container {
   h2,
   h3,
   h4 {
-    margin-top: var(--space-sm);
+    margin-top: $space-sm;
   }
 
   ul,
   ol,
   p {
-    margin-bottom: var(--space-md);
+    margin-bottom: $space-md;
   }
 }
 
 // Text Size
 .text--xxxl {
-  font-size: var(--text-xxxl);
+  font-size: $text-xxxl;
 }
 
 h1,
 .text--xxl {
-  font-size: var(--text-xxl);
+  font-size: $text-xxl;
 }
 
 h2,
 .text--xl {
-  font-size: var(--text-xl);
+  font-size: $text-xl;
 }
 
 h3,
 .text--lg {
-  font-size: var(--text-lg);
+  font-size: $text-lg;
 }
 
 h4,
 .text--md {
-  font-size: var(--text-md);
+  font-size: $text-md;
 }
 
 .text--sm,
 small {
-  font-size: var(--text-sm);
+  font-size: $text-sm;
 }
 
 .text--xs {
-  font-size: var(--text-xs);
+  font-size: $text-xs;
 }
 
 p {
-  line-height: var(--body-line-height);
+  line-height: var($body-line-height);
 }
 
 // @include breakpoint(md) {
 //   :root {
-//     --text-base-size: 1.25em;
-//     --text-scale-ratio: 1.25;
+//     $text-base-size: 1.25em;
+//     $text-scale-ratio: 1.25;
 //   }
 // }
 
 body {
-  color: var(--color-text);
+  color: var($color-text);
 }
 
 h1,
@@ -124,13 +124,13 @@ h2,
 h3,
 h4,
 form legend {
-  color: var(--color-text-heading);
+  color: var($color-text-heading);
 }
 
 a {
-  color: var(--color-link);
+  color: var($color-link);
 
   &:visited {
-    color: var(--color-link-visited);
+    color: var($color-link-visited);
   }
 }
