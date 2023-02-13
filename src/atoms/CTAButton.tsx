@@ -7,9 +7,9 @@ interface ICTAButton {
 
 const CTAButton = ({ text, url }: ICTAButton) => {
   return (
-    <a href={url} className="cta-button">
+    <button formAction={url} className="cta-button">
       {text}
-    </a>
+    </button>
   );
 };
 

@@ -1,44 +1,38 @@
-:root {
-  $font-primary: sans-serif;
-  $font-secondary: serif;
+$font-primary: sans-serif;
+$font-secondary: serif;
 
-  $text-base-size: 1em;
-  $text-scale-ratio: 1.2;
+$text-base-size: 1em;
+$text-scale-ratio: 1.2;
+$heading-line-height: normal;
+$body-line-height: normal;
 
-  // Type Scale
-  $text-xs: calc(
-    $text-base-size / ($text-scale-ratio * $text-scale-ratio)
-  );
-  $text-sm: calc($text-base-size / $text-scale-ratio);
-  $text-md: calc($text-base-size * $text-scale-ratio);
-  $text-lg: calc(
-    $text-base-size * $text-scale-ratio * $text-scale-ratio
-  );
-  $text-xl: calc(
-    $text-base-size * $text-scale-ratio * $text-scale-ratio *
-      $text-scale-ratio
-  );
-  $text-xxl: calc(
-    $text-base-size * $text-scale-ratio * $text-scale-ratio *
-      $text-scale-ratio * $text-scale-ratio
-  );
-  $text-xxxl: calc(
-    $text-base-size * $text-scale-ratio * $text-scale-ratio *
-      $text-scale-ratio * $text-scale-ratio *
-      $text-scale-ratio
-  );
+// Type Scale
+$text-xs: calc($text-base-size / ($text-scale-ratio * $text-scale-ratio));
+$text-sm: calc($text-base-size / $text-scale-ratio);
+$text-md: calc($text-base-size * $text-scale-ratio);
+$text-lg: calc($text-base-size * $text-scale-ratio * $text-scale-ratio);
+$text-xl: calc(
+  $text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio
+);
+$text-xxl: calc(
+  $text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio *
+    $text-scale-ratio
+);
+$text-xxxl: calc(
+  $text-base-size * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio *
+    $text-scale-ratio * $text-scale-ratio
+);
 
-  // spacing
-  $space-xxxs: 0.25em;
-  $space-xxs: 0.375em;
-  $space-xs: 0.5em;
-  $space-sm: 0.75em;
-  $space-md: 1.25em;
-  $space-lg: 2em;
-  $space-xl: 3.25em;
-  $space-xxl: 5.25em;
-  $space-xxxl: 8.5em;
-}
+// spacing
+$space-xxxs: 0.25em;
+$space-xxs: 0.375em;
+$space-xs: 0.5em;
+$space-sm: 0.75em;
+$space-md: 1.25em;
+$space-lg: 2em;
+$space-xl: 3.25em;
+$space-xxl: 5.25em;
+$space-xxxl: 8.5em;
 
 body {
   font-size: $text-base-size;

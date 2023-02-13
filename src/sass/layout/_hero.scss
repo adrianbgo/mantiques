@@ -1,16 +1,14 @@
 .hero {
   width: 99vw;
   height: 50vh;
-  background-image: url("src/assets/pexels-pixabay-289560.jpg");
-  background-size: 100vw;
+  background-image: url("src/assets/Antique Door.png");
   color: white;
   .text {
     max-width: 40vw;
     margin-left: 10vw;
-    padding-top: 2.5vw;
     .text--xxxl {
-      font-size: 5rem;
       font-family: serif;
+      color: white;
     }
     p {
       padding-bottom: 2rem;

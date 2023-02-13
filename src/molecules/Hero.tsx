@@ -1,4 +1,5 @@
 import React from "react";
+import CTAButton from "../atoms/CTAButton";
 
 const Hero = () => {
   return (
@@ -11,7 +12,7 @@ const Hero = () => {
           craft high-quality, unique pieces that are sure to add a touch of
           personality to your home.
         </p>
-        <button>Contact</button>
+        <CTAButton text="Contact" url="$" />
       </div>
     </div>
   );

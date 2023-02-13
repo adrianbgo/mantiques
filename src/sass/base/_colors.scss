@@ -1,11 +1,26 @@
-:root {
-  // typography
-  $color-text: $gray-10;
-  $color-text-heading: $black;
-  $color-text-subtle: $gray-6;
-  $color-link: $color-primary;
-  $color-link-visited: $color-primary-dark;
-}
+// Theme
+$color-primary: #6750a4;
+$color-primary-light: #eaddff;
+$color-primary-dark: #21005d;
+$color-background: #fffbfe;
+
+$gray-6: #939094;
+
+$gray-5: lighten($gray-6, 10%);
+$gray-7: darken($gray-6, 10%);
+$gray-4: lighten($gray-5, 10%);
+$gray-8: darken($gray-7, 10%);
+$gray-3: lighten($gray-4, 10%);
+$gray-9: darken($gray-8, 10%);
+$gray-2: lighten($gray-3, 10%);
+$gray-10: darken($gray-9, 10%);
+$gray-1: lighten($gray-2, 10%);
+
+$color-text: $gray-10;
+$color-text-heading: black;
+$color-text-subtle: $gray-6;
+$color-link: $color-primary;
+$color-link-visited: $color-primary-dark;
 
 body {
   color: $color-text;

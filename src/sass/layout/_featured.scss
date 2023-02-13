@@ -1,0 +1,22 @@
+.featured {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas:
+    "title title title"
+    "itemA itemB itemC";
+
+  #title {
+    grid-area: title;
+  }
+  #itemA {
+    grid-area: itemA;
+  }
+  #itemB {
+    grid-area: itemB;
+  }
+  #itemC {
+    grid-area: itemC;
+  }
+}

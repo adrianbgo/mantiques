@@ -1,0 +1,12 @@
+.featuredItem {
+  border: 1px solid $gray-6;
+  padding: 1rem;
+  border-radius: 1vh;
+  img {
+    width: 100%;
+  }
+  p {
+    height: 2rem;
+    margin-bottom: 1rem;
+  }
+}

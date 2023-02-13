@@ -109,16 +109,8 @@ input {
   border-radius: 0;
 }
 
-:root {
-  --color-text: var(--gray-10);
-  --color-text-heading: var(--black);
-  --color-text-subtle: var(--gray-6);
-  --color-link: var(--color-primary);
-  --color-link-visited: var(--color-primary-dark);
-}
-
 body {
-  color: var(--color-text);
+  color: #2c2b2d;
 }
 
 h1,
@@ -126,57 +118,20 @@ h2,
 h3,
 h4,
 form legend {
-  color: var(--color-text-heading);
+  color: black;
 }
 
 a {
-  color: var(--color-link);
+  color: #6750a4;
 }
 a:visited {
-  color: var(--color-link-visited);
-}
-
-:root {
-  --font-primary: sans-serif;
-  --font-secondary: serif;
-  --text-base-size: 1em;
-  --text-scale-ratio: 1.2;
-  --text-xs: calc(
-    var(--text-base-size) / (var(--text-scale-ratio) * var(--text-scale-ratio))
-  );
-  --text-sm: calc(var(--text-base-size) / var(--text-scale-ratio));
-  --text-md: calc(var(--text-base-size) * var(--text-scale-ratio));
-  --text-lg: calc(
-    var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio)
-  );
-  --text-xl: calc(
-    var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) *
-      var(--text-scale-ratio)
-  );
-  --text-xxl: calc(
-    var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) *
-      var(--text-scale-ratio) * var(--text-scale-ratio)
-  );
-  --text-xxxl: calc(
-    var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) *
-      var(--text-scale-ratio) * var(--text-scale-ratio) *
-      var(--text-scale-ratio)
-  );
-  --space-xxxs: 0.25em;
-  --space-xxs: 0.375em;
-  --space-xs: 0.5em;
-  --space-sm: 0.75em;
-  --space-md: 1.25em;
-  --space-lg: 2em;
-  --space-xl: 3.25em;
-  --space-xxl: 5.25em;
-  --space-xxxl: 8.5em;
+  color: #21005d;
 }
 
 body {
-  font-size: var(--text-base-size);
-  font-family: var(--font-primary);
-  color: var(color-text);
+  font-size: 1em;
+  font-family: sans-serif;
+  color: #2c2b2d;
 }
 
 h1,
@@ -184,61 +139,61 @@ h2,
 h3,
 h4,
 form legend {
-  color: var(color-text-heading);
-  margin-bottom: var(--space-xxs);
-  line-height: var(--heading-line-height);
+  color: black;
+  margin-bottom: 0.375em;
+  line-height: normal;
 }
 
 .text-container h2,
 .text-container h3,
 .text-container h4 {
-  margin-top: var(--space-sm);
+  margin-top: 0.75em;
 }
 .text-container ul,
 .text-container ol,
 .text-container p {
-  margin-bottom: var(--space-md);
+  margin-bottom: 1.25em;
 }
 
 .text--xxxl {
-  font-size: var(--text-xxxl);
+  font-size: 2.48832em;
 }
 
 h1,
 .text--xxl {
-  font-size: var(--text-xxl);
+  font-size: 2.0736em;
 }
 
 h2,
 .text--xl {
-  font-size: var(--text-xl);
+  font-size: 1.728em;
 }
 
 h3,
 .text--lg {
-  font-size: var(--text-lg);
+  font-size: 1.44em;
 }
 
 h4,
 .text--md {
-  font-size: var(--text-md);
+  font-size: 1.2em;
 }
 
 .text--sm,
 small {
-  font-size: var(--text-sm);
+  font-size: 0.8333333333em;
 }
 
 .text--xs {
-  font-size: var(--text-xs);
+  font-size: 0.6944444444em;
 }
 
 p {
-  line-height: var(--body-line-height);
+  line-height: var(normal);
 }
 
 body {
-  color: var(--color-text);
+  color: var(#2c2b2d);
 }
 
 h1,
@@ -246,14 +201,14 @@ h2,
 h3,
 h4,
 form legend {
-  color: var(--color-text-heading);
+  color: var(black);
 }
 
 a {
-  color: var(--color-link);
+  color: var(#6750a4);
 }
 a:visited {
-  color: var(--color-link-visited);
+  color: var(#21005d);
 }
 
 .navbar {
@@ -364,21 +319,45 @@ a:visited {
   padding-left: 5px;
 }
 
+.featuredItem {
+  border: 1px solid #939094;
+  padding: 1rem;
+  border-radius: 1vh;
+}
+.featuredItem img {
+  width: 100%;
+}
+.featuredItem p {
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  transition-duration: 0.4s;
+  background-color: #c6c4c6;
+  border: 2px solid #2c2b2d;
+  color: black;
+  padding: 1rem;
+  border-radius: 1vh;
+}
+.cta-button:hover {
+  color: white;
+  background-color: #2c2b2d;
+}
+
 .hero {
   width: 99vw;
   height: 50vh;
-  background-image: url("src/assets/pexels-pixabay-289560.jpg");
-  background-size: 100vw;
+  background-image: url("src/assets/Antique Door.png");
   color: white;
 }
 .hero .text {
   max-width: 40vw;
   margin-left: 10vw;
-  padding-top: 2.5vw;
 }
 .hero .text .text--xxxl {
-  font-size: 5rem;
   font-family: serif;
+  color: white;
 }
 .hero .text p {
   padding-bottom: 2rem;
@@ -391,6 +370,26 @@ a:visited {
   max-width: 25vw;
   margin: 2vw;
   border-radius: 2vw;
+}
+
+.featured {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas: "title title title" "itemA itemB itemC";
+}
+.featured #title {
+  grid-area: title;
+}
+.featured #itemA {
+  grid-area: itemA;
+}
+.featured #itemB {
+  grid-area: itemB;
+}
+.featured #itemC {
+  grid-area: itemC;
 }
 
 /*# sourceMappingURL=styles.css.map */
