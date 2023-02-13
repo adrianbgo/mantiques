@@ -345,6 +345,18 @@ a:visited {
   background-color: #2c2b2d;
 }
 
+.about-us {
+  padding: 2rem;
+  background: #dfdedf;
+  text-align: center;
+}
+.about-us h2 {
+  font-size: 2.48832em;
+}
+.about-us p {
+  margin: 1rem auto;
+}
+
 .hero {
   width: 99vw;
   height: 50vh;

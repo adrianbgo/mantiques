@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CTAButton from "../atoms/CTAButton";
 
 const About = () => {
   return (
@@ -11,10 +12,8 @@ const About = () => {
         being forgotten and giving them a new life through careful upcycling and
         repurposing.
       </p>
-      <p>
-        Discover our full story and meet our team on the{" "}
-        <a href="/about">About Page</a>.
-      </p>
+      <p>Discover our full story and meet our team on the About Page.</p>
+      <CTAButton text="Learn More" url="./about" />
     </div>
   );
 };
