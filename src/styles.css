@@ -211,21 +211,6 @@ a:visited {
   color: var(#21005d);
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem;
-}
-.navbar #logo {
-  font-family: serif;
-}
-.navbar .socials {
-  display: flex;
-}
-.navbar .socials svg {
-  margin: auto 0.2rem;
-}
-
 .testimonials {
   display: flex;
   justify-content: center;
@@ -361,10 +346,14 @@ a:visited {
   width: 99vw;
   height: 50vh;
   background-image: url("src/assets/Antique Door.png");
+  background-size: cover;
+  background-position: 50%;
   color: white;
+  padding: 2rem;
+  text-justify: distribute;
 }
 .hero .text {
-  max-width: 40vw;
+  max-width: 25vw;
   margin-left: 10vw;
 }
 .hero .text .text--xxxl {
@@ -375,6 +364,20 @@ a:visited {
   padding-bottom: 2rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  .hero {
+    max-height: 40vh;
+  }
+  .hero .text {
+    max-width: 75vw;
+    font-size: 0.6944444444em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero .text {
+    font-size: 0.5787037037em;
+  }
+}
 .gallery {
   margin: 10vh 5vw;
 }
@@ -402,6 +405,97 @@ a:visited {
 }
 .featured #itemC {
   grid-area: itemC;
+}
+
+footer {
+  background-color: #2c2b2d;
+  color: #fffbfe;
+  padding: 50px 0;
+}
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer .container .contact-info,
+footer .container .social-media,
+footer .container .newsletter {
+  flex-basis: 30%;
+  max-width: 300px;
+}
+footer .container .contact-info h3,
+footer .container .social-media h3,
+footer .container .newsletter h3 {
+  color: #c6c4c6;
+  font-size: 1.728em;
+  margin-bottom: 20px;
+}
+footer .container .contact-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+footer .container .social-media ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+footer .container .social-media ul li a {
+  display: block;
+  font-size: 20px;
+  color: #fffbfe;
+  transition: color 0.2s;
+}
+footer .container .social-media ul li a:hover {
+  color: #acaaad;
+}
+footer .container .newsletter form {
+  display: flex;
+  margin-top: 20px;
+}
+footer .container .newsletter form input[type=email] {
+  flex-basis: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+footer .container .newsletter form button {
+  flex-basis: 30%;
+  background-color: #eaddff;
+  color: #2c2b2d;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+footer .container .newsletter form button:hover {
+  background-color: #6750a4;
+  color: #fffbfe;
+}
+footer .fa {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+.navbar #logo {
+  font-family: serif;
+}
+.navbar .socials {
+  display: flex;
+}
+.navbar .socials svg {
+  margin: auto 0.2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

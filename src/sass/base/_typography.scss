@@ -7,6 +7,9 @@ $heading-line-height: normal;
 $body-line-height: normal;
 
 // Type Scale
+$text-xxs: calc(
+  $text-base-size / ($text-scale-ratio * $text-scale-ratio * $text-scale-ratio)
+);
 $text-xs: calc($text-base-size / ($text-scale-ratio * $text-scale-ratio));
 $text-sm: calc($text-base-size / $text-scale-ratio);
 $text-md: calc($text-base-size * $text-scale-ratio);

@@ -2,9 +2,13 @@
   width: 99vw;
   height: 50vh;
   background-image: url("src/assets/Antique Door.png");
+  background-size: cover;
+  background-position: 50%;
   color: white;
+  padding: 2rem;
+  text-justify: distribute;
   .text {
-    max-width: 40vw;
+    max-width: 25vw;
     margin-left: 10vw;
     .text--xxxl {
       font-family: serif;
@@ -12,6 +16,24 @@
     }
     p {
       padding-bottom: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero {
+    max-height: 40vh;
+    .text {
+      max-width: 75vw;
+      font-size: $text-xs;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero {
+    .text {
+      font-size: $text-xxs;
     }
   }
 }
