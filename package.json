@@ -1,6 +1,6 @@
 {
   "name": "mantiques",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "homepage": "https://adrianbgo.github.io",
   "type": "module",
