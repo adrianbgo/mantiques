@@ -9,23 +9,18 @@ import {
 import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
 
-const router = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <Home />,
-      errorElement: <ErrorPage />,
-    },
-    {
-      path: "/home",
-      element: <Home />,
-      errorElement: <ErrorPage />,
-    },
-  ],
+const router = createBrowserRouter([
   {
-    basename: process.env.PUBLIC_URL,
-  }
-);
+    path: "/",
+    element: <Home />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/home",
+    element: <Home />,
+    errorElement: <ErrorPage />,
+  },
+]);
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <RouterProvider router={router} fallbackElement={<Home />} />

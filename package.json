@@ -2,7 +2,6 @@
   "name": "mantiques",
   "private": false,
   "version": "0.1.0",
-  "homepage": ".",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
