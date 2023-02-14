@@ -1,7 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  BrowserRouter,
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
 
@@ -19,6 +23,8 @@ const router = createBrowserRouter([
 ]);
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} fallbackElement={<Home />}/>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <RouterProvider router={router} fallbackElement={<Home />} />
+    </BrowserRouter>
   </React.StrictMode>
 );
