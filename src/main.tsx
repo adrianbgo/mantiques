@@ -23,7 +23,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: window.location.pathname || "",
+    basename: process.env.PUBLIC_URL,
   }
 );
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
