@@ -1,8 +1,8 @@
 {
   "name": "mantiques",
   "private": false,
-  "version": "0.0.0",
-  "homepage": "https://adrianbgo.github.io/mantiques",
+  "version": "0.1.0",
+  "homepage": ".",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
