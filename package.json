@@ -2,8 +2,7 @@
   "name": "mantiques",
   "private": false,
   "version": "0.0.0",
-  "homepage": "http://adrianbgo.github.io/mantiques",
-  "type": "module",
+  "homepage": "https://adrianbgo.github.io/mantiques",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
