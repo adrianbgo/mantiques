@@ -23,7 +23,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: "https://adrianbgo.github.io/mantiques",
+    basename: window.location.pathname || "",
   }
 );
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
