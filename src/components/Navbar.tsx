@@ -1,25 +1,47 @@
-import React from "react";
-import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaBars, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import CTAButton from "../atoms/CTAButton";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="navbar">
-      <p className="text--xl" id="logo">
-        Mantiques
-      </p>
-      <a href="/home">Home</a>
-      <a href="/about">About Us</a>
-      <a href="/products">Products</a>
-      <a href="/contact">Contact Us</a>
-      <a href="/blog">Blog</a>
-      <div className="socials">
-        <FaFacebook />
-        <FaInstagram />
-        <FaTiktok />
-        <CTAButton text="Call Us" url="#" />
+    <nav className={`navbar ${isOpen ? ".responsive" : ""}`}>
+      <p className="navbar-logo">Mantiques</p>
+      <ul className="navbar-links">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/about">About Us</a>
+        </li>
+        <li>
+          <a href="/products">Products</a>
+        </li>
+        <li>
+          <a href="/contact">Contact Us</a>
+        </li>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+      </ul>
+      <div className="navbar-social">
+        <a href="">
+          <FaFacebook />
+        </a>
+        <a href="">
+          <FaTwitter />
+        </a>
+        <a href="">
+          <FaInstagram />
+        </a>
       </div>
-    </div>
+      <a href="#" className="navbar-cta">
+        Call Us
+      </a>
+      <div className="navbar-toggle" onClick={() => setIsOpen(!isOpen)}>
+        <FaBars />
+      </div>
+    </nav>
   );
 };
 

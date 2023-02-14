@@ -7,7 +7,7 @@ interface ICTAButton {
 
 const CTAButton = ({ text, url }: ICTAButton) => {
   return (
-    <button formAction={url} className="cta-button">
+    <button onClick={() => (window.location.href = url)} className="cta-button">
       {text}
     </button>
   );
