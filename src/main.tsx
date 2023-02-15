@@ -4,6 +4,7 @@ import "./styles.css";
 import {
   BrowserRouter,
   createBrowserRouter,
+  createHashRouter,
   HashRouter,
   RouterProvider,
 } from "react-router-dom";
@@ -13,7 +14,7 @@ import App from "./App";
 import AboutUs from "./pages/AboutUs";
 import Root from "./HOCs/Root";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
