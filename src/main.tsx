@@ -11,7 +11,7 @@ import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
 import App from "./App";
 import AboutUs from "./pages/AboutUs";
-import Root from "./molecules/Root";
+import Root from "./HOCs/Root";
 
 const router = createBrowserRouter([
   {
