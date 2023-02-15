@@ -1,14 +1,14 @@
 {
   "name": "mantiques",
-  "private": false,
+  "private": true,
   "version": "0.1.0",
-  "homepage": "https://adrianbgo.github.io/mantiques/",
+  "homepage": "https://adrianbgo.github.io/mantiques",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.2.0",
