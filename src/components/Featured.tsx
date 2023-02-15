@@ -10,7 +10,7 @@ const Featured = () => {
         description="This beautifully restored antique secretary desk is the perfect additon to any home office."
         cta="Learn More"
         ctaLink="#"
-        imageUrl="src\assets\pexels-bidvine-1249610.jpg"
+        imageUrl="../mantiques/assets/pexels-bidvine-1249610.jpg"
         altText="Secretary Desk"
         key="itemA"
       />
@@ -19,7 +19,7 @@ const Featured = () => {
         description="This vintage chest of drawers has been given new life with a fresh coat of paint."
         cta="Learn More"
         ctaLink="#"
-        imageUrl="src\assets\pexels-bidvine-1249610.jpg"
+        imageUrl="../mantiques/assets/pexels-bidvine-1249610.jpg"
         altText="Chest of Drawers"
         key="itemB"
       />
@@ -28,7 +28,7 @@ const Featured = () => {
         description="This comfortable armchair has been given a new lease on life with new upholstery and modern accents."
         cta="Learn More"
         ctaLink="#"
-        imageUrl="src\assets\pexels-bidvine-1249610.jpg"
+        imageUrl="../mantiques/assets/pexels-bidvine-1249610.jpg"
         altText="Upcycled Armchair"
         key="itemC"
       />

@@ -9,7 +9,10 @@ const Testimonials = () => {
           better results. Their craftsmanship is one of a kind.
           <div className="arrow"></div>
         </blockquote>
-        <img src="src\assets\pexels-max-vakhtbovych-7745930.jpg" alt="" />
+        <img
+          src="../mantiques/assets/pexels-max-vakhtbovych-7745930.jpg"
+          alt=""
+        />
         <div className="author">
           <h5>
             Pelican Steve <span>- Sandusky, OH</span>
@@ -23,7 +26,7 @@ const Testimonials = () => {
           <div className="arrow"></div>
         </blockquote>
         <img
-          src="src\assets\pexels-the-shaan-photography-11592504.jpg"
+          src="../mantiques/assets/pexels-the-shaan-photography-11592504.jpg"
           alt=""
         />
         <div className="author">
@@ -39,7 +42,7 @@ const Testimonials = () => {
           <div className="arrow"></div>
         </blockquote>
         <img
-          src="src\assets\pexels-the-shaan-photography-11592516.jpg"
+          src="../mantiques/assets/pexels-the-shaan-photography-11592516.jpg"
           alt=""
         />
         <div className="author">
