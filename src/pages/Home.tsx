@@ -10,13 +10,11 @@ import Hero from "../molecules/Hero";
 const Home = () => {
   return (
     <>
-      <Navbar />
       <Hero />
       <Gallery />
       <Testimonials />
       <Featured />
       <About />
-      <Footer />
     </>
   );
 };

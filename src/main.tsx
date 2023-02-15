@@ -10,21 +10,29 @@ import {
 import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
 import App from "./App";
+import AboutUs from "./pages/AboutUs";
+import Root from "./molecules/Root";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Root />,
     errorElement: <ErrorPage />,
-  },
-  {
-    path: "/home",
-    element: <Home />,
-    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "about-us",
+        element: <AboutUs />,
+      },
+    ],
   },
 ]);
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
