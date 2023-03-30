@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface ICTAButton {
   text: string;
@@ -7,9 +8,9 @@ interface ICTAButton {
 
 const CTAButton = ({ text, url }: ICTAButton) => {
   return (
-    <button onClick={() => (window.location.href = url)} className="cta-button">
+    <Link to={url} className="cta-button">
       {text}
-    </button>
+    </Link>
   );
 };
 

@@ -1,35 +1,32 @@
 import React from "react";
-import FeaturedItem from "../atoms/FeaturedItem";
+import CardItem from "../atoms/CardItem";
 
 const Featured = () => {
   return (
     <div className="featured">
       <h2 id="title">Featured Products</h2>
-      <FeaturedItem
-        headline="Antique Secretary Desk"
+      <CardItem
+        name="Antique Secretary Desk"
         description="This beautifully restored antique secretary desk is the perfect additon to any home office."
         cta="Learn More"
-        ctaLink="#"
-        imageUrl="../mantiques/assets/pexels-bidvine-1249610.jpg"
-        altText="Secretary Desk"
+        ctalink="#"
+        imgurl="../mantiques/assets/pexels-bidvine-1249610.jpg"
         key="itemA"
       />
-      <FeaturedItem
-        headline="Vintage Chest of Drawers"
+      <CardItem
+        name="Vintage Chest of Drawers"
         description="This vintage chest of drawers has been given new life with a fresh coat of paint."
         cta="Learn More"
-        ctaLink="#"
-        imageUrl="../mantiques/assets/pexels-bidvine-1249610.jpg"
-        altText="Chest of Drawers"
+        ctalink="#"
+        imgurl="../mantiques/assets/pexels-bidvine-1249610.jpg"
         key="itemB"
       />
-      <FeaturedItem
-        headline="Upcycled Armchair"
+      <CardItem
+        name="Upcycled Armchair"
         description="This comfortable armchair has been given a new lease on life with new upholstery and modern accents."
         cta="Learn More"
-        ctaLink="#"
-        imageUrl="../mantiques/assets/pexels-bidvine-1249610.jpg"
-        altText="Upcycled Armchair"
+        ctalink="#"
+        imgurl="../mantiques/assets/pexels-bidvine-1249610.jpg"
         key="itemC"
       />
     </div>

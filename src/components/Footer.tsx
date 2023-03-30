@@ -16,7 +16,7 @@ const Footer = () => {
           <h3>Contact Us</h3>
           <p>
             <FaMapMarkerAlt />
-            123 Main St. Sandusky, OH 44870
+            2434 W. Monroe Street, Sandusky, OH 44870
           </p>
           <p>
             <FaPhone />

@@ -1,0 +1,110 @@
+.product-card {
+  box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 5em auto;
+  height: 350px;
+  width: 700px;
+
+  .product-details {
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+    padding: 30px;
+    height: 100%;
+    float: left;
+    width: 40%;
+
+    h2 {
+      display: inline-block;
+      position: relative;
+      font-size: 34px;
+      color: $color-text;
+      margin: 0;
+    }
+
+    .hint-star {
+      display: inline-block;
+      margin-left: 0.5em;
+      color: gold;
+      width: 50%;
+    }
+
+    .information {
+      text-align: center;
+      font-size: 15px;
+      color: #7d7d7d;
+    }
+
+    .control {
+      position: absolute;
+      bottom: 20%;
+      left: 15.3%;
+
+      .btn {
+        transform: translateY(0px);
+        transition: 0.3s linear;
+        background: $color-primary;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        color: $color-background;
+        padding: 0;
+        margin: 0;
+
+        &:hover {
+          transform: translateY(-4px);
+        }
+
+        span {
+          transition: transform 0.4s;
+          display: inline-block;
+          padding: 10px 20px;
+          font-size: 1.2em;
+          margin: 0;
+        }
+
+        .shopping-cart,
+        .price {
+          background: #333;
+          border: 0;
+          margin: 0;
+        }
+
+        .price {
+          transform: translateX(-10%);
+          padding-right: 15px;
+        }
+
+        .shopping-cart {
+          transform: translateX(-100%);
+          position: absolute;
+          background: #333;
+          z-index: 1;
+          left: 0;
+          top: 0;
+        }
+
+        .buy {
+          z-index: 3;
+          font-weight: bolder;
+        }
+
+        &:hover {
+          .price {
+            transform: translateX(-110%);
+          }
+
+          .shopping-cart {
+            transform: translateX(0%);
+          }
+        }
+      }
+    }
+  }
+}

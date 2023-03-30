@@ -1,0 +1,62 @@
+#contact-us {
+  background-color: $color-primary-light;
+  padding: 50px 0;
+
+  h2 {
+    font-size: $text-xxl;
+    color: $gray-8;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    fieldset {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-size: $text-md;
+      color: $gray-8;
+      margin-bottom: 10px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: $text-md;
+      border-radius: 4px;
+      border: none;
+    }
+
+    textarea {
+      height: 200px;
+    }
+
+    button[type="submit"] {
+      background-color: $gray-8;
+      color: $color-background;
+      padding: 10px 20px;
+      font-size: $text-md;
+      border: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $gray-6;
+      }
+    }
+  }
+}

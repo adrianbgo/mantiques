@@ -7,10 +7,11 @@ const Hero = () => {
       <div className="text">
         <h2 className="text--xxxl">Modern Antiques in Sandusky, OH</h2>
         <p className="text--xl">
-          Mantiques in Sandusky, OH is a local business that specializes in
-          custom-made furniture and home decor. With years of experience, they
-          craft high-quality, unique pieces that are sure to add a touch of
-          personality to your home.
+          Mantiques Studio began before it truly existed. It is the
+          manifestation of the shared dream of creators Kim and Mark, who have a
+          mutual passion for creating where vintage and modern intersect.
+          Located in the quaint artisan community of Patina Creek, on beautiful
+          Mills Creek on the west end of Sandusky.
         </p>
         <CTAButton text="Contact" url="$" />
       </div>
